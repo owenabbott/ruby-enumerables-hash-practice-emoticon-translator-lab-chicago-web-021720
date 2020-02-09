@@ -11,14 +11,13 @@ def load_library(library)
       
       #reminder for when I try to decipher my own code later: YAML.load_file(library).values and .keys are both arrays, so YAML.load_file(library).values.index(i) is saying to find the index of i in said array. Since each element in YAML.load_file(library).keys is an array of 2, and the second element is the japanese emoticon, I need to select that one. Hence the [1] at the end.
       
-      #reminder for when I try to decipher my own code later: YAML.load_file(library).values and .keys are both arrays, so YAML.load_file(library).values.index(i) is saying to find the index of i in said array. Since each element in YAML.load_file(library).keys is an array of 2, and the second element is the japanese emoticon, I need to select that one. Hence the [1] at the end.
       
     end
    pp answer
 end
 
 
-def get_japanese_emoticon(library)
+def get_japanese_emoticon(library, emoticon)
   
   
 end
