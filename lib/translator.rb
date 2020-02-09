@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(library)
 #  pp YAML.load_file(library)
 
-    answer={:get_meaning => {}, get_emoticon = {}} 
+    answer={:get_meaning => {}, get_emoticon => {}} 
     for i in YAML.load_file(library).keys
       answer[:get_meaning][i]=YAML.load_file(library).values[YAML.load_file(library).keys.index(i)][1]
       
