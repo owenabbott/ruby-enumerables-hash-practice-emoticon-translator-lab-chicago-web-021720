@@ -7,7 +7,7 @@ def load_library(library)
     answer={:get_meaning => {}, :get_emoticon => {}} 
     for i in YAML.load_file(library).keys
       answer[:get_meaning][YAML.load_file(library).values[YAML.load_file(library).keys.index(i)][1]] = i
-      answer[:get_emoticon][YAML.load_file(library).values[YAML.load_file(library).keys.index(i)][0]] = "testing"
+      answer[:get_emoticon][YAML.load_file(library).values[YAML.load_file(library).keys.index(i)][0]] = YAML.load_file(library).values[YAML.load_file(library).keys.index(i)][1]
       
       #reminder for when I try to decipher my own code later: YAML.load_file(library).values and .keys are both arrays, so YAML.load_file(library).values.index(i) is saying to find the index of i in said array. Since each element in YAML.load_file(library).keys is an array of 2, and the second element is the japanese emoticon, I need to select that one. Hence the [1] at the end.
       
