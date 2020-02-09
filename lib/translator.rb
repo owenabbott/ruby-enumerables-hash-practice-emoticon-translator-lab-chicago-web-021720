@@ -22,7 +22,7 @@ def get_japanese_emoticon(library, emoticon)
   
 end
 
-def get_english_meaning
+def get_english_meaning(library, emoticon)
   
   # code goes here
 end
