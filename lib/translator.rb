@@ -6,7 +6,7 @@ def load_library(library)
 
     answer={:get_meaning => {}} 
     for i in YAML.load_file(library).keys
-      answer[:get_meaning][i]={:get_emoticon => YAML.load_file(library).values[YAML.load_file(library).keys.index(i)]}
+      answer[:get_meaning][i]=YAML.load_file(library).values[YAML.load_file(library).keys.index(i)]
       
       #reminder for when I try to decipher my own code later: YAML.load_file(library).values and .keys are both arrays, so YAML.load_file(library).values.index(i) is saying to find the index of i in said array.
     end
