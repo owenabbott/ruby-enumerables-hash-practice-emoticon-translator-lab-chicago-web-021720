@@ -44,7 +44,6 @@ end
 
 
 
-
  ########junkyard of once promising code########
  
 #  answer={:get_meaning => {}, :get_emoticon => {}} 
