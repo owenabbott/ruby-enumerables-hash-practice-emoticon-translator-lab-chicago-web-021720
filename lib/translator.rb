@@ -22,6 +22,11 @@ def get_japanese_emoticon(library, emoticon)
   library=load_library(library)
   answer=library[:get_emoticon][emoticon]
   pp answer
+  if answer==nil 
+    return "sorry this emoticon doesn't exist"
+  else
+    return answer
+  end
 end
 
 def get_english_meaning(library, emoticon)
