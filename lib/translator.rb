@@ -5,10 +5,7 @@ def load_library(library)
 #  pp YAML.load_file(library)
   answer={:get_meaning => {}, :get_emoticon => {}} 
     for i in YAML.load_file(library).keys
-      answer[:get_meaning][i]=i
-        for n in YAML.load_file(library).values
-        answer[:get_emoticon][n] = n
-      end
+      answer[:get_meaning][i]=YAML.load_file(library).values[YAML.load_file(library).keys[index(i)]]
       
       
       
