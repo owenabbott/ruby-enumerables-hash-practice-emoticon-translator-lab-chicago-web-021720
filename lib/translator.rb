@@ -36,6 +36,7 @@ def get_english_meaning(library, emoticon)
     return "Sorry, that emoticon was not found"
   else
     return answer
+  end
   # code goes here
 end
 
