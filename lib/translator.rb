@@ -19,7 +19,8 @@ end
 
 
 def get_japanese_emoticon(library, emoticon)
-  pp load_library(library)
+  library=load_library(library)
+  
   
 end
 
