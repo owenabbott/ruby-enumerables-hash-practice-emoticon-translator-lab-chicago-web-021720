@@ -20,8 +20,8 @@ end
 
 def get_japanese_emoticon(library, emoticon)
   library=load_library(library)
-  
-  
+  answer=library[:get_emoticon][emoticon]
+  pp answer
 end
 
 def get_english_meaning(library, emoticon)
