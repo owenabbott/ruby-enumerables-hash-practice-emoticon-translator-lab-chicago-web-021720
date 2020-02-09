@@ -3,10 +3,7 @@ require 'yaml'
 
 def load_library(library)
 #  pp YAML.load_file(library)
-  answer={:get_meaning => {}, :get_emoticon => {}} 
-    for i in YAML.load_file(library).keys
-      answer[:get_meaning][i]=YAML.load_file(library).values[YAML.load_file(library).keys[index(i)]]
-      
+
     answer={:get_meaning => {}} 
     for i in YAML.load_file(library).keys
       answer[:get_meaning][i]={:get_emoticon => YAML.load_file(library).values[YAML.load_file(library).keys.index(i)]}
@@ -26,3 +23,14 @@ def get_english_meaning
   
   # code goes here
 end
+
+
+
+
+
+
+ #code junkyard
+#  answer={:get_meaning => {}, :get_emoticon => {}} 
+#    for i in YAML.load_file(library).keys
+#      answer[:get_meaning][i]=YAML.load_file(library).values[YAML.load_file(library).keys[index(i)]]
+      
